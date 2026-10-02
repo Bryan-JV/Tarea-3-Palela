@@ -19,7 +19,7 @@ CPPFLAGS ?= -I$(INC_DIR) -MMD -MP
 # net_util is linked into both servers but not into the client.
 COMMON_OBJ := $(BUILD_DIR)/net_util.o
 
-PROGRAMS := server_unsafe server_safe load_client
+PROGRAMS := server_safe load_client
 BINARIES := $(addprefix $(BIN_DIR)/,$(PROGRAMS))
 
 .PHONY: all clean
